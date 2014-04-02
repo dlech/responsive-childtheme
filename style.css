@@ -1,11 +1,12 @@
 /* 
-Theme Name: Responsive Child Theme
+Theme Name: Responsive Child Theme (lechnology)
 Theme URI: http://cyberchimps.com/guide/child-theme-example/
-Description: Responsive Child Theme
+Description: Responsive Child Theme (lechnology)
 Template: responsive
 Version: 1.0.0
-Author: CyberChimps
-Author URI: https://cyberchimps.com/
+Author David Lechner
+Original-Author: CyberChimps
+Original-Author URI: https://cyberchimps.com/
 License: GNU General Public License
 License URI: license.txt
 
@@ -14,22 +15,95 @@ License URI: license.txt
 /* =Start From Here
 -------------------------------------------------------------- */
 
+a {
+	color: #607caf;
+}
 
+a:hover,
+a:focus {
+	color: #607caf;
+	text-decoration: underline !important;
+}
 
+input {
+	border-radius: 10px !important;
+}
 
+.skip-container {
+	padding-top: 2em;
+}
 
+#header {
+	background-color: #fff;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border: 1px solid #E5E5E5;
+	border-bottom-style: none;
+}
 
+#logo {
+	margin: 20px 20px 10px;
+}
 
+#top-widget {
+	margin: 40px 30px 0px;
+}
 
+.menu {
+	margin: 0px 20px;
+	padding: 0px 20px;
+	border-radius: 10px;
+	background-color: #787878;
+	background-image: -moz-linear-gradient(center top, #888888, #6D6D6D);
+}
 
+.menu a {
+	border-right: 1px dotted #fff;
+	height: 35px;
+	line-height: 35px;
+}
 
+.menu a:hover {
+	background-image: -moz-linear-gradient(center top , #909090, #565656);
+}
 
+.menu > li:first-child > a {
+	border-left: 1px dotted #fff;
+}
 
+#wrapper,
+.front-page #wrapper {
+	margin: 0px auto;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-style: none;
+}
 
+#featured {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-style: none;
+	width: 99.7936%;
+}
 
+#widgets .widget-title img {
+	top: 15px;
+	width: 16px;
+	height: 32px;
+}
 
+.widget-wrapper {
+	border-radius: 10px;
+}
 
+#respond {
+	border-radius: 10px;
+}
 
-
-
-/*The last 29 days of the month are the hardest."- Nikola Tesla*/
+#footer-wrapper {
+	padding: 0px 25px;
+}
