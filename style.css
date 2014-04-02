@@ -91,9 +91,9 @@ input {
 }
 
 #widgets .widget-title img {
-	top: 15px;
-	width: 16px;
-	height: 32px;
+	top: 0px;
+	width: auto;
+	height: auto;
 }
 
 .widget-wrapper {
