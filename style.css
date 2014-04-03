@@ -25,6 +25,22 @@ a:focus {
 	text-decoration: underline !important;
 }
 
+.anchor-link {
+	display:block;
+	color:#fff;
+	position:absolute;
+	top:0px;
+	left:-15px;
+	bottom:0px;
+	font-size:70%;
+	line-height:1.2em;
+	vertical-align:middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	position:relative;
+}
+
 input {
 	border-radius: 10px !important;
 }
