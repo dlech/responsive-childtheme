@@ -132,6 +132,14 @@ input {
 	padding: 0px 25px;
 }
 
+.modified-date {
+	position: relative;
+	float: right;
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
 #toc_container {
 	position: relative;
 	z-index: 2;

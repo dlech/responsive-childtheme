@@ -22,3 +22,10 @@ function image_shortcode($atts, $content = null) {
     }
 }
 add_shortcode('image','image_shortcode');
+
+
+function page_modified_date($args) {
+	if ( is_page() )
+		echo '<span class="modified-date">Updated: ' . get_the_modified_date() . '</span>';
+}
+add_action('responsive_entry_top', 'page_modified_date');
