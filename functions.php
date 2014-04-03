@@ -22,12 +22,3 @@ function image_shortcode($atts, $content = null) {
     }
 }
 add_shortcode('image','image_shortcode');
-
-function anchor_shortcode($atts, $content = null) {
-	extract( shortcode_atts( array (
-	'name' => ''
-	), $atts ) );
-	$output = "<a href='#$name' class='anchor-link'>&#182;</a><a name='$name'></a>";
-	return $output;
-}
-add_shortcode('anchor','anchor_shortcode');

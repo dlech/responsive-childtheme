@@ -39,6 +39,7 @@ a:focus {
 
 h1, h2, h3, h4, h5, h6 {
 	position:relative;
+	z-index:1;
 }
 
 input {
@@ -90,11 +91,18 @@ input {
 #wrapper,
 .front-page #wrapper {
 	margin: 0px auto;
+	padding-left: 35px;
+	padding-right: 35px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	border-top-style: none;
+}
+
+.front-page #wrapper {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #featured {
@@ -122,4 +130,12 @@ input {
 
 #footer-wrapper {
 	padding: 0px 25px;
+}
+
+#toc_container {
+	position: relative;
+	z-index: 2;
+	background-color: #F9F9F9;
+	border: 1px solid #E5E5E5;
+	border-radius: 10px;
 }
