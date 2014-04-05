@@ -70,3 +70,9 @@ function hide_page_modified_date_save_postdata ( $post_id )
 	update_post_meta( $post_id, 'hide_page_modified_date', isset( $_POST['hide_page_modified_date'] ) );
 }
 add_action( 'save_post', 'hide_page_modified_date_save_postdata' );
+
+function lechnology_favicon ( $arg )
+{
+	echo '<link rel="shortcut icon" href="' . get_stylesheet_directory_uri() . '/favicon.png" />';
+} 
+add_action( 'wp_head', 'lechnology_favicon');
