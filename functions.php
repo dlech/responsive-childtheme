@@ -76,3 +76,12 @@ function lechnology_favicon ( $arg )
 	echo '<link rel="shortcut icon" href="' . get_stylesheet_directory_uri() . '/favicon.png" />';
 } 
 add_action( 'wp_head', 'lechnology_favicon');
+
+function category_rss_link_filter ( $arg1, $arg2 )
+{
+	global $wp_query;
+	if ( $arg2 == 'url' && $wp_query->is_category )
+		$arg1 .= '/' . $wp_query->query['category_name'];
+	return ( ent2ncr( $arg1 ) );
+}
+add_filter('get_bloginfo_rss', 'category_rss_link_filter', 10, 2);
